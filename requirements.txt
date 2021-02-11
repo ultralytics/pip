@@ -1,1 +1,6 @@
+# Example requirements
 numpy>=1.18.5
+
+# PyPI package deployment
+build
+twine
