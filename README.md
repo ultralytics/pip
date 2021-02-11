@@ -1,30 +1,39 @@
-<img src="https://storage.googleapis.com/ultralytics/logo/logoname1000.png" width="160">
+# A sample Python project
 
-# Introduction
+![Python Logo](https://www.python.org/static/community_logos/python-logo.png "Sample inline image")
 
-This directory contains label import/export software developed by Ultralytics LLC, and **is freely available for redistribution under the GPL-3.0 license**. For more information please visit https://www.ultralytics.com.
+A sample project that exists as an aid to the [Python Packaging User
+Guide][packaging guide]'s [Tutorial on Packaging and Distributing
+Projects][distribution tutorial].
 
-# Description
+This project does not aim to cover best practices for Python project
+development as a whole. For example, it does not provide guidance or tool
+recommendations for version control, documentation, or testing.
 
-The https://github.com/ultralytics/pip repo contains code for Python package experiments.
+[The source for this project is available here][src].
 
-# Requirements
+Most of the configuration for a Python project is done in the `setup.py` file,
+an example of which is included in this project. You should edit this file
+accordingly to adapt this sample project to your needs.
 
-Python 3.8 or later with all [requirements.txt](https://github.com/ultralytics/JSON2YOLO/blob/master/requirements.txt) dependencies installed. To install run:
-```bash
-$ pip install -r requirements.txt
-```
+----
 
-## About Us
+This is the README file for the project.
 
-Ultralytics is a U.S.-based particle physics and AI startup with over 6 years of expertise supporting government, academic and business clients. We offer a wide range of vision AI services, spanning from simple expert advice up to delivery of fully customized, end-to-end production solutions, including:
-- **Cloud-based AI** systems operating on **hundreds of HD video streams in realtime.**
-- **Edge AI** integrated into custom iOS and Android apps for realtime **30 FPS video inference.**
-- **Custom data training**, hyperparameter evolution, and model exportation to any destination.
+The file should use UTF-8 encoding and can be written using
+[reStructuredText][rst] or [markdown][md use] with the appropriate [key set][md
+use]. It will be used to generate the project webpage on PyPI and will be
+displayed as the project homepage on common code-hosting services, and should be
+written for that purpose.
 
-For business inquiries and professional support requests please visit us at https://www.ultralytics.com. 
+Typical contents for this file would include an overview of the project, basic
+usage examples, etc. Generally, including the project changelog in here is not a
+good idea, although a simple “What's New” section for the most recent version
+may be appropriate.
 
-
-## Contact
-
-**Issues should be raised directly in the repository.** For business inquiries or professional support requests please visit https://www.ultralytics.com or email Glenn Jocher at glenn.jocher@ultralytics.com. 
+[packaging guide]: https://packaging.python.org
+[distribution tutorial]: https://packaging.python.org/tutorials/packaging-projects/
+[src]: https://github.com/pypa/sampleproject
+[rst]: http://docutils.sourceforge.net/rst.html
+[md]: https://tools.ietf.org/html/rfc7764#section-3.5 "CommonMark variant"
+[md use]: https://packaging.python.org/specifications/core-metadata/#description-content-type-optional
