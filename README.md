@@ -37,3 +37,28 @@ may be appropriate.
 [rst]: http://docutils.sourceforge.net/rst.html
 [md]: https://tools.ietf.org/html/rfc7764#section-3.5 "CommonMark variant"
 [md use]: https://packaging.python.org/specifications/core-metadata/#description-content-type-optional
+
+
+## Requirements
+
+Python 3.8 or later with all [requirements.txt](https://github.com/ultralytics/pip/blob/master/requirements.txt) dependencies installed, including `build` and `twine`. To install run:
+```bash
+$ python -m pip install --upgrade pip
+$ pip install -r requirements.txt
+```
+
+
+## Pip Package Steps
+
+```bash
+# Build and upload
+rm -rf build dist && python -m build && python -m twine upload --repository testpypi dist/*
+# username: __token__
+# password: pypi-AgENdGVzdC5weXBpLm9yZ...
+
+# Download and install
+python -m pip install --index-url https://test.pypi.org/simple/ --no-deps yolov5test4
+
+# Import and test
+python -c "from sample import simple; print(simple.add_one(10))"
+```
