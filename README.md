@@ -39,7 +39,10 @@ $ pip install -r requirements.txt
 
 ```bash
 # Build and upload
-rm -rf build dist && python -m build && python -m twine upload --repository testpypi dist/*
+rm -rf build dist  # clean previous
+python -m build  # build package
+python -m twine upload --repository testpypi dist/*  # test upload https://test.pypi.org/
+# python -m build && python -m twine upload dist/*  # production upload https://pypi.org/
 # username: __token__
 # password: pypi-AgENdGVzdC5weXBpLm9yZ...
 
