@@ -44,7 +44,7 @@ rm -rf build dist && python -m build && python -m twine upload --repository test
 # password: pypi-AgENdGVzdC5weXBpLm9yZ...
 
 # Download and install
-python -m pip install -U --index-url https://test.pypi.org/simple/ --no-deps ultralytics
+python -m pip install -U --index-url https://test.pypi.org/simple/ --no-deps ultralytics==0.0.1
 
 # Import and test
 python -c "from ultralytics import simple; print(simple.add_one(10))"
