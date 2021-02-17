@@ -17,7 +17,7 @@ with open(here / 'requirements.txt') as fp:  # read requirements.txt
 
 setup(
     name='ultralytics',  # Required https://packaging.python.org/specifications/core-metadata/#name
-    version='0.0.2',  # Required https://packaging.python.org/en/latest/single_source_version.html
+    version='0.0.0',  # Required https://packaging.python.org/en/latest/single_source_version.html
     description='Ultralytics YOLOv5 Python package, www.ultralytics.com',  # Optional
     long_description=long_description,  # Optional
     long_description_content_type='text/markdown',  # Optional
