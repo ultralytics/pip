@@ -46,7 +46,7 @@ rm -rf build dist && python -m build && python -m twine upload dist/*
 # password: pypi-AgENdGVzdC5weXBpLm9yZ...
 
 # Download and install
-pip install ultralytics==0.0.0
+pip install -U ultralytics
 
 # Import and test
 python -c "from ultralytics import simple; print(simple.add_one(10))"
