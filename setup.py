@@ -6,6 +6,7 @@ https://github.com/pypa/sampleproject
 """
 
 import pathlib
+import re
 
 # Always prefer setuptools over distutils
 from setuptools import setup, find_packages
@@ -15,9 +16,15 @@ long_description = (here / 'README.md').read_text(encoding='utf-8')  # Get the l
 with open(here / 'requirements.txt') as fp:  # read requirements.txt
     install_reqs = [r.rstrip() for r in fp.readlines() if not r.startswith('#')]
 
+
+def get_version():
+    file = here / 'src/ultralytics/__init__.py'
+    return re.search(r'^__version__ = [\'"]([^\'"]*)[\'"]', file.read_text(), re.M).group(1)
+
+
 setup(
-    name='ultralytics',  # Required https://packaging.python.org/specifications/core-metadata/#name
-    version='0.0.0',  # Required https://packaging.python.org/en/latest/single_source_version.html
+    name='ultralytics2',  # Required https://packaging.python.org/specifications/core-metadata/#name
+    version=get_version(),  # Required https://packaging.python.org/en/latest/single_source_version.html
     description='Ultralytics YOLOv5 Python package, www.ultralytics.com',  # Optional
     long_description=long_description,  # Optional
     long_description_content_type='text/markdown',  # Optional
@@ -70,7 +77,7 @@ setup(
     #
     # For example, the following would provide a command called `ultralytics` which
     # executes the function `main` from this package when invoked:
-    entry_points={'console_scripts': ['sample_script=ultralytics:main', ],
+    entry_points={'console_scripts': ['ultralytics=ultralytics.console:main', ],
                   },  # Optional
 
     project_urls={'Bug Reports': 'https://github.com/ultralytics/yolov5/issues',

@@ -37,17 +37,32 @@ $ pip install -r requirements.txt
 
 ## Pip Package Steps
 
-```bash
-# Build and upload https://test.pypi.org/
-rm -rf build dist && python -m build && python -m twine upload --repository testpypi dist/*
+### https://pypi.org/
 
+```bash
 # Build and upload https://pypi.org/
 rm -rf build dist && python -m build && python -m twine upload dist/*
 # username: __token__
 # password: pypi-AgENdGVzdC5weXBpLm9yZ...
 
 # Download and install
-python -m pip install -U --index-url https://test.pypi.org/simple/ --no-deps ultralytics==0.0.0
+pip install ultralytics==0.0.0
+
+# Import and test
+python -c "from ultralytics import simple; print(simple.add_one(10))"
+sample_script
+```
+
+### https://test.pypi.org/
+
+```bash
+# Build and upload https://test.pypi.org/
+rm -rf build dist && python -m build && python -m twine upload --repository testpypi dist/*
+# username: __token__
+# password: pypi-AgENdGVzdC5weXBpLm9yZ...
+
+# Download and install
+pip install -U --index-url https://test.pypi.org/simple/ --no-deps ultralytics2==0.0.9
 
 # Import and test
 python -c "from ultralytics import simple; print(simple.add_one(10))"
