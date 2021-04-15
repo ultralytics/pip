@@ -23,7 +23,7 @@ def get_version():
 
 
 setup(
-    name='ultralytics2',  # Required https://packaging.python.org/specifications/core-metadata/#name
+    name='ultralytics',  # Required https://packaging.python.org/specifications/core-metadata/#name
     version=get_version(),  # Required https://packaging.python.org/en/latest/single_source_version.html
     description='Ultralytics YOLOv5 Python package, www.ultralytics.com',  # Optional
     long_description=long_description,  # Optional
