@@ -32,12 +32,12 @@ def get_api_key():
 
 
 def main():
-    if len(sys.argv) == 1 or sys.argv[1] == 'version':
+    if len(sys.argv) == 1 or sys.argv[1] == 'version':  # usage: $ ultralytics version
         print(f'{prefix}version {__version__}')
         print(f'{prefix}for more info see https://pypi.org/project/ultralytics/')
 
-    elif sys.argv[1] == 'login':
-        key = sys.argv[2] if len(sys.argv) == 3 else get_api_key()  # specified or most recent path
+    elif sys.argv[1] == 'login':  # usage: $ ultralytics login {optional_key}
+        key = sys.argv[2] if len(sys.argv) == 3 else get_api_key()  # get_api_key() if not supplied
         print(f'{prefix}Logging in with API key {key}')
 
         # Login user with API key
