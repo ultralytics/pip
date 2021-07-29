@@ -31,8 +31,8 @@ Python 3.8 or later with all [requirements.txt](https://github.com/ultralytics/p
 dependencies installed, including `build` and `twine`. To install run:
 
 ```bash
-$ python -m pip install -U pip
-$ pip install -r requirements.txt
+python -m pip install -U pip
+pip install -r requirements.txt
 ```
 
 ## Pip Package Steps
