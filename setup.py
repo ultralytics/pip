@@ -33,7 +33,7 @@ setup(
     author_email='glenn.jocher@ultralytics.com',  # Optional
     classifiers=['Development Status :: 5 - Production/Stable',  # 3 - Alpha, 4 - Beta, 5 - Production/Stable
                  'Intended Audience :: Developers',  # Indicate who your project is intended for
-                 'Operating System :: OS Independent',  # Operation system
+                 'Operating System :: OS Independent',
                  'Topic :: Education',  # Topics
                  'Topic :: Scientific/Engineering',
                  'Topic :: Scientific/Engineering :: Artificial Intelligence',
