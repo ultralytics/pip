@@ -9,12 +9,6 @@ Please note that this project is not a comprehensive guide to all best practices
 
 The source code for this project is available [here][src], and your contributions and feedback are welcome.
 
-[packaging guide]: https://packaging.python.org
-
-[distribution tutorial]: https://packaging.python.org/tutorials/packaging-projects/
-
-[src]: https://github.com/pypa/sampleproject
-
 The main configurations for setting up a Python project are contained within the `setup.py` file. We have included a sample `setup.py` in this project for your reference. Be sure to tailor it to the specific needs of your project.
 
 ## Prerequisites
@@ -87,6 +81,7 @@ Remember to always upload your package to the Test PyPI first to ensure everythi
 We welcome contributions from the community! Whether you're fixing bugs, adding new features, or improving documentation, your input is invaluable. Take a look at our [Contributing Guide](https://docs.ultralytics.com/help/contributing) to get started. Also, we'd love to hear about your experience with Ultralytics products. Please consider filling out our [Survey](https://ultralytics.com/survey?utm_source=github&utm_medium=social&utm_campaign=Survey). A huge 🙏 and thank you to all of our contributors!
 
 <!-- Ultralytics contributors -->
+
 <a href="https://github.com/ultralytics/yolov5/graphs/contributors">
 <img width="100%" src="https://github.com/ultralytics/assets/raw/main/im/image-contributors.png" alt="Ultralytics open-source contributors"></a>
 
@@ -117,3 +112,7 @@ For bug reports, feature requests, and contributions, head to [GitHub Issues](ht
   <img src="https://github.com/ultralytics/assets/raw/main/social/logo-transparent.png" width="3%" alt="space">
   <a href="https://ultralytics.com/discord"><img src="https://github.com/ultralytics/assets/raw/main/social/logo-social-discord.png" width="3%" alt="Ultralytics Discord"></a>
 </div>
+
+[distribution tutorial]: https://packaging.python.org/tutorials/packaging-projects/
+[packaging guide]: https://packaging.python.org
+[src]: https://github.com/pypa/sampleproject
