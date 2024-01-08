@@ -3,8 +3,6 @@
 
 # Sample Pip Project 📦
 
-
-
 Welcome to the Sample Pip Project! This repository serves as a practical reference for the [Python Packaging User Guide][packaging guide]'s [Tutorial on Packaging and Distributing Projects][distribution tutorial]. Our goals are to provide clear examples and to help you master the art of packaging and distributing Python projects.
 
 [![Ultralytics Actions](https://github.com/ultralytics/pip/actions/workflows/format.yml/badge.svg)](https://github.com/ultralytics/pip/actions/workflows/format.yml)
