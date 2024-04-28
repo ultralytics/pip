@@ -2,7 +2,9 @@
 
 import sys
 
-from .__init__ import __version__  # all imports require a dot when building package: '.__init__', etc.
+from .__init__ import (
+    __version__,  # all imports require a dot when building package: '.__init__', etc.
+)
 from .utils.general import colorstr
 
 prefix = colorstr("ultralytics: ")
