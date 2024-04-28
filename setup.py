@@ -10,7 +10,7 @@ import pathlib
 import re
 
 # Always prefer setuptools over distutils
-from setuptools import setup, find_packages
+from setuptools import find_packages, setup
 
 here = pathlib.Path(__file__).parent.resolve()  # current path
 long_description = (here / "README.md").read_text(encoding="utf-8")  # Get the long description from the README file
