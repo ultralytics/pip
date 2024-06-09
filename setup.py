@@ -20,7 +20,7 @@ with open(here / "requirements.txt") as fp:  # read requirements.txt
 
 def get_version():
     file = here / "src/ultralytics/__init__.py"
-    return re.search(r'^__version__ = [\'"]([^\'"]*)[\'"]', file.read_text(), re.M).group(1)
+    return re.search(r'^__version__ = [\'"]([^\'"]*)[\'"]', file.read_text(), re.M)[1]
 
 
 setup(
