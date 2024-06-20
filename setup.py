@@ -19,6 +19,7 @@ with open(here / "requirements.txt") as fp:  # read requirements.txt
 
 
 def get_version():
+    """Return the current version of the Ultralytics library as defined in "src/ultralytics/__init__.py"."""
     file = here / "src/ultralytics/__init__.py"
     return re.search(r'^__version__ = [\'"]([^\'"]*)[\'"]', file.read_text(), re.M)[1]
 

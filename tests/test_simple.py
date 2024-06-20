@@ -9,6 +9,7 @@ from sample.simple import add_one
 
 class TestSimple(unittest.TestCase):
     def test_add_one(self):
+        """Tests that the add_one() function correctly increments the input value by 1."""
         self.assertEqual(add_one(5), 6)
 
 

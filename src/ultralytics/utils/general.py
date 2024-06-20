@@ -2,7 +2,7 @@
 
 
 def colorstr(*input):
-    # Colors a string https://en.wikipedia.org/wiki/ANSI_escape_code, i.e.  colorstr('blue', 'hello world')
+    """Colors a string using ANSI escape codes, e.g., colorstr('blue', 'hello world')."""
     *args, string = input if len(input) > 1 else ("blue", "bold", input[0])  # color arguments, string
     colors = {
         "black": "\033[30m",  # basic colors
