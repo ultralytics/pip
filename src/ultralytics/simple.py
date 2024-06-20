@@ -3,4 +3,5 @@
 
 
 def add_one(number):
+    """Increment the input number by one and return the result."""
     return number + 1

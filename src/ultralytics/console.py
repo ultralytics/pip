@@ -11,7 +11,7 @@ prefix = colorstr("ultralytics: ")
 
 
 def get_api_key():
-    # Get a user's API key
+    """Prompt the user to input their Ultralytics API key, providing a browser link to find it."""
     print(f"{prefix}You can find your API key in your browser here: https://ultralytics.com/key")
     return input(f"{prefix}Paste an API key from your profile and hit enter: ")  # key
 
@@ -34,6 +34,7 @@ def get_api_key():
 
 
 def main():
+    """Main entry point for Ultralytics CLI with commands for version info and user login."""
     if len(sys.argv) == 1 or sys.argv[1] == "version":  # usage: $ ultralytics version
         print(f"{prefix}version {__version__}")
         print(f"{prefix}for more info see https://pypi.org/project/ultralytics/")
