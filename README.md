@@ -5,7 +5,7 @@
 
 Welcome to the Sample Pip Project! This repository serves as a practical reference for the [Python Packaging User Guide][packaging guide]'s [Tutorial on Packaging and Distributing Projects][distribution tutorial]. Our goals are to provide clear examples and to help you master the art of packaging and distributing Python projects.
 
-[![Ultralytics Actions](https://github.com/ultralytics/pip/actions/workflows/format.yml/badge.svg)](https://github.com/ultralytics/pip/actions/workflows/format.yml) <a href="https://ultralytics.com/discord"><img alt="Discord" src="https://img.shields.io/discord/1089800235347353640?logo=discord&logoColor=white&label=Discord&color=blue"></a>
+[![Ultralytics Actions](https://github.com/ultralytics/pip/actions/workflows/format.yml/badge.svg)](https://github.com/ultralytics/pip/actions/workflows/format.yml) <a href="https://ultralytics.com/discord"><img alt="Discord" src="https://img.shields.io/discord/1089800235347353640?logo=discord&logoColor=white&label=Discord&color=blue"></a> <a href="https://community.ultralytics.com"><img alt="Ultralytics Forums" src="https://img.shields.io/discourse/users?server=https%3A%2F%2Fcommunity.ultralytics.com&logo=discourse&label=Forums&color=blue"></a>
 
 Please note that this project is not a comprehensive guide to all best practices in software development. Areas such as version control, comprehensive documentation, or extensive testing strategies are beyond the scope of this tutorial.
 
