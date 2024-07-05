@@ -18,7 +18,7 @@ The main configurations for setting up a Python project are contained within the
 Before diving into the packaging process, you'll need:
 
 - Python 3.8 or later installed on your machine.
-- All the necessary dependencies listed in [requirements.txt](https://github.com/ultralytics/pip/blob/master/requirements.txt), which include packages like `build` and `twine`.
+- All the necessary dependencies listed in [requirements.txt](https://github.com/ultralytics/pip/blob/main/requirements.txt), which include packages like `build` and `twine`.
 
 To install these requirements, run the following commands:
 
